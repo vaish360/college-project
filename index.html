@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=1600" ,initial-scale="1.0">
+<style type="text/css">
+    body{
+        width:600px;
+        background-color:  #F5EEC2;
+    }
+#web_name{
+Color: Yellow;
+height:45px;
+width:100%;
+border:2px solid red;
+box-shadow:1px 2px 3px grey;
+background:red;
+font-size:40px;
+position: absolute;
+left:0px;
+top:0px;
+z-index:2;
+overflow: hidden;
+}
+#text1{
+position: absolute;
+transform:translate(685px,-53px);
+font-weight:900;
+ 
+ 
+}
+#img1{
+transform:translate(-50px,-40px) rotate(20deg);
+animation:pump 20s ease-in 0s infinite alternate;
+}
+ 
+@keyframes pump{
+ 
+0%{
+transform:translate(-50px,-40px) rotate(0deg);
+ 
+ 
+}
+ 
+100%{
+transform:translate(1550px,-40px) rotate(90deg);
+}
+ 
+ 
+}
+ 
+#img2{
+transform:translate(0px,-110px) rotate(20deg);
+animation:cof 20s ease-in 0s infinite alternate;
+}
+ 
+@keyframes cof{
+ 
+0%{
+transform:translate(1550px,-110px) rotate(0deg);
+ 
+ 
+}
+ 
+100%{
+transform:translate(-80px,-110px) rotate(90deg);
+}
+ 
+ 
+}
+ 
+#img3{
+transform:translate(150px,-180px) rotate(20deg);
+animation:straw 20s ease-in 0s infinite alternate;
+}
+ 
+@keyframes straw{
+ 
+0%{
+transform:translate(150px,-300px) rotate(0deg);
+ 
+ 
+}
+ 
+100%{
+transform:translate(150px,-120px) rotate(360deg);
+}
+ 
+ 
+}
+ 
+#hide{
+position: absolute;
+top:50px;
+left:0px;
+height:700px;
+width:100%;
+border:2px solid transparent;
+border-radius:0%;
+overflow: hidden;
+animation:go 3s ease-in 0s 1 normal;
+display: block;
+perspective:1000px;
+z-index:1;
+}
+ 
+ 
+#disclose{
+ 
+ 
+height:700px;
+width:100%;
+border:2px solid transparent;
+border-top-left-radius:0%;
+border-bottom-right-radius:0%;
+ 
+ 
+}
+ 
+#offer_wind{height:300px;
+width:100%;
+border:3px solid black;
+box-shadow:2px 3px 5px grey;
+animation:test 2s ease-in 0s 1 normal;
+transform:rotateY(0deg);
+opacity:1;
+background-image:URL("");
+transition: transform 1s, opacity 2s,border 2s , background-image 2s ease-in-out;
+position: relative;
+top:50px;
+transform-origin:50% 50%
+display:block;
+z-index:0;
+}
+ 
+#btn1{
+position: absolute;
+top:450px;
+left:700px;
+height:60px;
+width:150px;
+border:2px solid purple;
+background: Purple;
+border-radius:5%;
+font-size:20px;
+font-weight:600;
+color:white;
+box-shadow:2px 3px 4px grey;
+transform:rotateY(0deg);
+opacity:1;
+display:block;
+transition: transform 1s , opacity 0.25s, display 1s 1s ;
+}
+#btn1:hover{
+box-shadow:2px 3px 40px lightgreen;
+ 
+ 
+}
+ 
+#purchase{
+position: absolute;
+top:50px;
+left:0px;
+height:700px;
+width:100%;
+border:2px solid transparent;
+overflow: scroll;
+z-index:0;
+opacity:0;
+transition: opacity 1s 0s,tranform 1s, background 1s 0.5s;
+perspective:1000px;
+background:white;
+}
+#pro1{
+height:150px;
+width:100%;
+transform:translate(0px,25px);
+overflow:  hidden;
+transform:rotateY(0deg);
+transition: transform 1s ;
+border:2px solid white;
+background: white;
+background:linear-gradient(45deg, #ffa500, #00a5dc, #004eaf, #2db928, #057855, #ff2d37);
+    color:aliceblue;
+    background-size: 1500px 150px;
+box-shadow:1px 2px 3px grey;
+
+}
+#pro2{
+height:150px;
+width:100%;
+transform:translate(0px,25px);
+overflow: hidden;
+transform:rotateY(0deg);
+transition: transform 1s ;
+  background-image: linear-gradient(to right, #fffbd5, #b20a2c);    
+border:2px solid white;
+
+box-shadow:1px 2px 3px grey;
+
+}
+#pro3{
+height:150px;
+width:100%;
+transform:translate(0px,25px);
+overflow: hidden;
+transform:rotateY(0deg);
+transition: transform 1s ;
+border:2px solid white;
+background-image: linear-gradient(to right, #434343 0%, black 100%);
+box-shadow:1px 2px 3px grey;
+
+}
+#pro4{
+height:150px;
+width:100%;
+    font-size: 40px;
+transform:translate(0px,25px);
+overflow: hidden;
+transform:rotateY(0deg);
+transition: transform 1s ;
+border:2px solid white;
+background-image: linear-gradient(to right, #434343 0%, black 100%);
+box-shadow:1px 2px 3px grey;
+opacity:0.5;
+
+}
+#pro5{
+height:150px;
+width:100%;
+transform:translate(0px,25px);
+overflow: hidden;
+transform:rotateY(0deg);
+transition: transform 1s ;
+border:2px solid white;
+background-image: linear-gradient(to right, #434343 0%, black 100%);
+opacity:0.5;
+    font-size: 40px;
+    background-size: 100px 150px;
+box-shadow:1px 2px 3px grey;
+
+
+
+}
+#pro6{
+height:150px;
+width:100%;
+transform:translate(0px,25px);
+overflow: hidden;
+transform:rotateY(0deg);
+transition: transform 1s ;
+border:2px solid white;
+font-size: 40px;
+opacity:0.5;
+box-shadow:1px 2px 3px grey;
+background-image: linear-gradient(to right, #434343 0%, black 100%)
+}
+#sidebar{
+height:50px;
+width:60px;
+position: absolute;
+border:2px solid transparent;
+opacity:1;
+z-index:3;
+top:0px;
+left:1430px;
+
+}
+#svg1{
+height:50px;
+width:50px;
+fill: black;
+transform: translate(5px,-15px) rotate(90deg);
+transition : transform 0.5s;
+}
+#svg2{
+height:50px;
+width:50px;
+fill: black;
+transform: translate(5px,-45px) rotate(90deg);
+transition : transform 0.5s;
+}
+#bar{
+height:0px;
+width:100%;
+background: white;
+border:2px ridge white;
+position: absolute;
+box-shadow:2px 4px 5px grey;
+top:0px;
+left:0px;
+transform: translate(0px,-50px) rotate(0deg);
+transition : height 0.5s 0s linear;
+z-index:2;
+overflow:hidden;
+}
+#txt_1{
+color:green;
+font-size:20px;
+ 
+ 
+}
+#txt_2{
+color:green;
+font-size:20px;
+ 
+ 
+}
+#txt{
+position: absolute;
+top:76px;
+left:30px;
+height:350px;
+width:320px;
+border:1px solid transparent;
+ 
+ 
+ 
+}
+#img4{
+     
+height:50px;
+width:50px;
+animation:img4 25s ease-in 0s infinite normal;
+transform: translate(0px,20px);
+}
+@keyframes img4{
+0%{transform: translate(0px,20px);
+}
+ 
+25%{
+transform: translate(0px,350px);
+ 
+}
+ 
+50%{transform: translate(1400px,350px);
+}
+ 
+75%{transform: translate(1400px,20px);
+}
+ 
+100%{
+transform: translate(0px,20px);
+ 
+}
+ 
+ 
+}
+#img5{
+
+height:50px;
+width:50px;
+animation:img5 25s linear 1.5s infinite normal;
+transform: translate(0px,-20px);
+}
+@keyframes img5{
+0%{transform: translate(0px,-50px);
+}
+ 
+25%{
+transform: translate(0px,300px);
+ 
+}
+ 
+50%{transform: translate(1430px,300px);
+}
+ 
+75%{transform: translate(1430px,-50px);
+}
+ 
+100%{
+transform: translate(0px,-50px);
+ 
+}
+ 
+ 
+}
+ 
+#img6{
+
+height:50px;
+width:50px;
+animation:img6 25s linear 3.0s infinite normal;
+transform: translate(0px,0px);
+}
+@keyframes img6{
+0%{transform: translate(0px,-100px);
+}
+ 
+25%{
+transform: translate(0px,250px);
+ 
+}
+ 
+50%{transform: translate(1430px,250px);
+}
+ 
+75%{transform: translate(1400px,-100px);
+}
+ 
+100%{
+transform: translate(0px,-100px);
+ 
+}
+}
+#img7{
+ 
+height:50px;
+width:50px;
+animation:img7 25s linear 4.5s infinite normal;
+transform: translate(0px,0px);
+}
+@keyframes img7{
+0%{transform: translate(0px,-150px);
+}
+ 
+25%{
+transform: translate(0px,200px);
+ 
+}
+ 
+50%{transform: translate(1430px,200px);
+}
+ 
+75%{transform: translate(1430px,-150px);
+}
+ 
+100%{
+transform: translate(0px,-150px);
+ 
+}
+}
+#img8{
+
+height:50px;
+width:50px;
+animation:img8 25s linear 6.0s infinite normal;
+transform: translate(0px,0px);
+}
+ 
+@keyframes img8{
+0%{transform: translate(0px,-200px);
+}
+ 
+25%{
+transform: translate(0px,150px);
+ 
+}
+ 
+50%{transform: translate(1400px,150px);
+}
+ 
+75%{transform: translate(1400px,-200px);
+}
+ 
+100%{
+transform: translate(0px,-200px);
+ 
+}
+}
+ 
+/* Dishes */
+ 
+#item{
+height:0px;
+width:100%;
+border-bottom:5px solid red ;
+transition: height 1s;
+background: rgba(255,255,255,1) ;
+transform: skewZ(5deg);
+transition: transform 2s;
+transform-origin:50px 50px;
+overflow: scroll;
+opacity:0;
+display:block;
+position: absolute;
+top:-10px;
+transition: height 2s 0s;
+z-index:1;
+}
+#dish1{
+height:400px;
+width:326px;
+border:2px solid black;
+position: relative;
+top:70px;
+left:40%;
+overflow:scroll;
+box-shadow:2px 3px 30px #af3dff;
+Background-size:440px;
+background-position:-50px 0px;
+background-image:url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.CKe3dL3NuRKG6CPcxSRRCQHaEK%26pid%3DApi&f=1");
+}
+#info1{
+ 
+position: relative;
+top:246px;
+left:0px;
+height:250px;
+width:100%;
+border:2px solid black;
+overflow:hidden;
+border-top-right-radius:10%;
+border-top-left-radius:10%;
+box-shadow:20px 30px 100px lightgreen;
+background: white;
+}
+#txtA,#txtB,#txtC,#txtD{
+ 
+font-size:20px;
+color:#546174;
+ 
+}
+ 
+#txtA1,#txtB1,#txtC1,#txtD1{
+font-size:15px;
+color:red;}
+ 
+#txtA2,#txtB2,#txtC2,#txtD2{
+font-size:15px;
+color: #455366;}
+ 
+#btn2,#btn3,#btn4,#btn5{
+width:326px;
+height:50px;
+background:green;
+font-weight:700;
+color:white;
+font-size:20px;
+border:2px solid transparent;
+}
+ 
+ 
+#dish2{
+height:400px;
+width:330px;
+border:2px solid black ;
+position: relative;
+top:220px;
+left:40%;
+overflow:scroll;
+box-shadow:2px 3px 30px #af3dff;
+Background-size:340px;
+background-position:0px 0px;
+background-image:url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.A4yJnIOiC3hnvElhDig7BgHaLO%26pid%3DApi&f=1");
+}
+#info2{
+ 
+position: relative;
+top:246px;
+left:0px;
+height:250px;
+width:326px;
+border:2px solid black;
+overflow:hidden;
+border-top-right-radius:10%;
+border-top-left-radius:10%;
+box-shadow:20px 30px 100px lightgreen;
+background: white;
+}
+ 
+#dish3{
+height:400px;
+width:330px;
+border:2px solid black ;
+position: relative;
+top:370px;
+left:40%;
+overflow:scroll;
+box-shadow:2px 3px 30px #af3dff;
+Background-size:340px;
+background-position:0px 0px;
+background-image:url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.4lasZl-fC99l979_WEWeWAHaLK%26pid%3DApi&f=1");
+}
+#info3{
+ 
+position: relative;
+top:246px;
+left:0px;
+height:250px;
+width:326px;
+border:2px solid black;
+overflow:hidden;
+border-top-right-radius:10%;
+border-top-left-radius:10%;
+box-shadow:20px 30px 100px lightgreen;
+background: white;
+}
+ 
+#dish4{
+height:400px;
+width:330px;
+border:2px solid black ;
+position: relative;
+top:520px;
+left:40%;
+overflow:scroll;
+box-shadow:2px 3px 30px #af3dff;
+Background-size:340px;
+background-position:0px -100px;
+background-image:url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.xHyeYg9ix5jpsQveAV19tAHaKe%26pid%3DApi&f=1");
+}
+#info4{
+ 
+position: relative;
+top:246px;
+left:0px;
+height:250px;
+width:326px;
+border:2px solid black;
+overflow:hidden;
+border-top-right-radius:10%;
+border-top-left-radius:10%;
+box-shadow:20px 30px 100px lightgreen;
+background: white;
+}
+ 
+#regionName{
+
+color:Black;
+font-size:25px;
+transform: translate(0px,20px);
+font-weight:100;
+}
+ 
+.bold{
+ 
+color:red;
+    
+text-decoration:line-through;
+ 
+}
+    #txt1,#txt2,#txt3{
+     color:yellowgreen;
+    font-size:50px;
+        font-weight:900;
+        text-decoration:underline ;
+        text-decoration-color: mediumpurple;
+        text-decoration-style:wavy;
+       
+
+    }
+
+</style>
+<title></title>
+</head>
+<body>
+ 
+<div id="web_name">
+<p ><center id="text1" >फूddy</center></p>
+<img id="img1" src="https://img.icons8.com/small/50/000000/cute-pumpkin.png"/><br>
+<img id="img2" src="https://img.icons8.com/small/64/000000/kawaii-soda.png"/><br>
+<img id="img3"src="https://img.icons8.com/small/64/000000/strawberry.png"/>
+ 
+</div>
+ 
+<div id="hide">
+ 
+ 
+ 
+ 
+<div id="purchase">
+    <div id="pro1" onclick="item_in()"><center><p id="txt1"> booʇ nɒibnI</p></center></div><br>
+<div id="pro2" onclick="item_con()"><center><p id="txt2">booʇ lɒɈnɘniɈnoɔ</p></center></div><br>
+<div id="pro3" onclick="item_chi()"><center><p id="txt3">booʇ ɘƨɘniʜɔ</p></center></div><br>
+<div id="pro4"><p id="txt4"style=" transform:rotateY(180deg) translate(100px,0px); color:darkred; color:yellow;font-weight:900">Thai food<br><b style="color:red; font-weight:900; font-size:15px;">(will be available soon <br> sorry for inconvenience🙏)</b></p></div><br>
+<div id="pro5"><p id="txt5"style=" transform:rotateY(180deg) translate(100px,0px); color:yellow; font-weight:900">Non veg<br><b style="color:red; font-weight:900; font-size:15px;">(will be available soon <br> sorry for inconvenience🙏)</b></p></div><br>
+<div id="pro6"><p id="txt6"style=" transform:rotateY(180deg) translate(100px,0px); color:yellow; font-weight:900">beverages<br><b style="color:red; font-weight:900; font-size:15px;">(will be available soon <br> sorry for inconvenience🙏)</b></p></div><br>
+</div>
+ 
+ 
+ 
+ 
+<div id="offer_wind">
+ 
+<div id="disclose">
+</div>
+</div>
+ 
+<button onclick="offer()" id="btn1">Order Now</button>
+ 
+    
+ 
+<div id="sidebar" >
+<svg id="svg1"
+xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+aria-hidden="true"
+focusable="false"
+preserveAspectRatio="xMidYMid meet"
+viewBox="0 0 640 1792">
+<path d="M640 528q0 145-57 243.5T431 907l45 821q2 26-16 45t-44 19H224q-26 0-44-19t-16-45l45-821q-95-37-152-135.5T0 528q0-128 42.5-249.5T160 78.5T320 0t160 78.5t117.5 200T640 528z" />
+ 
+ 
+</svg>
+ 
+<svg id="svg2"
+xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+aria-hidden="true"
+focusable="false"
+preserveAspectRatio="xMidYMid meet"
+viewBox="0 0 640 1792">
+<path d="M640 528q0 145-57 243.5T431 907l45 821q2 26-16 45t-44 19H224q-26 0-44-19t-16-45l45-821q-95-37-152-135.5T0 528q0-128 42.5-249.5T160 78.5T320 0t160 78.5t117.5 200T640 528z" />
+ 
+ 
+</svg>
+</div>
+ 
+ 
+<div id="bar">
+<br>
+<br>
+ 
+<img id="img4" src="https://img.icons8.com/office/80/000000/cute-pumpkin.png"/><br>
+<img id="img5" src="https://img.icons8.com/office/40/000000/kawaii-cupcake.png"/><br>
+<img id="img6" src="https://img.icons8.com/office/40/000000/kawaii-taco.png"/><br>
+<img id="img7"src="https://img.icons8.com/office/40/000000/banana-split.png"/><br>
+<img id="img8"src="https://img.icons8.com/office/40/000000/paella.png"/>
+<div id="txt">
+<p id="txt_1">Login ♥️ </p>
+<p id="txt_2">Dish on demand 🔥</p>
+<p id="txt_2">Customer care 24/7⏳</p>
+<p id="txt_2">About us🤗</p>
+<p id="txt_2">Vacancies for chef!👩‍🍳👨‍🍳</p>
+</div>
+</div>
+ 
+ 
+ 
+ 
+ 
+ 
+<div id="item">
+<center id="regionName" > Indian Food </center>
+<svg height="50px" width="50px" style="border:2px solid black; position: relative; top:-20px; left:10px" id="svg3" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+aria-hidden="true"
+focusable="false"
+width="1em"
+height="1em"
+style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);"
+preserveAspectRatio="xMidYMid meet"
+viewBox="0 0 24 24">
+ 
+ 
+<path d="M12 9.059V6.5a1.001 1.001 0 0 0-1.707-.708L4 12l6.293 6.207a.997.997 0 0 0 1.414 0A.999.999 0 0 0 12 17.5v-2.489c2.75.068 5.755.566 8 3.989v-1c0-4.633-3.5-8.443-8-8.941z" fill="black"/></svg>
+<div id="dish1">
+<div id="info1">
+<p id="txt1"><center id="txtA">Varan batti/वरण बट्टी/दाल बाटी</center></p>
+<p id="txtA1">50% discount on first purchase🔥 <b class="bold" >200</b><b style="color:green">100 INR</b></p>
+<button id="btn2">Buy Now 100INR</button>
+<p id="txtA2">
+contain:<br>
+1) 3 Plate दाल/वरण(Varan)+ 3 teaspoon ghee <br>
+2) 2 plate Rice<br>
+3) 10 pieces of baati<br>
+4) brinjal curry
+</p>
+ 
+</div>
+</div>
+ 
+ 
+<div id="dish2">
+<div id="info2">
+<p id="txt4"><center id="txtB">Khichadi</center></p>
+<p id="txtB1">50% discount on first purchase🔥 <b style="text-decoration: line-through;">150</b> <b id="C4" style="color:green">75 INR</b></p>
+<button id="btn3">Buy Now 75INR</button>
+<p id="txtB2">
+contain:<br>
+One plate extra cooked khichadi
+</p>
+ 
+ 
+ 
+ 
+ 
+</div>
+</div>
+<div id="dish3">
+<div id="info3">
+<p id="txt7"><center id="txtC">Idli sambhar</center></p>
+<p id="txtC1">50% discount on first purchase🔥 <b id="C5" style="text-decoration: line-through;">500</b> <b id="C6"style="color:green">250 INR</b></p>
+<button id="btn4">Buy Now 250 INR</button>
+<p id="txtC2">
+contain:<br>
+1) 3 bowl of sambhar<br>
+2) 35 pieces of Idli<br>
+3) 5 pieces lemons<br>
+</p>
+ 
+ 
+ 
+</div>
+</div>
+ 
+<div id="dish4">
+<div id="info4">
+<p id="txt10"><center id="txtD">Cheese curry</center></p>
+<p id="txtD1">50% discount on first purchase🔥 <b id="C7" style="text-decoration: line-through;">600</b> <b id="C8" style="color:green">300 INR</b></p>
+<button id="btn5">Buy Now 300 INR</button>
+<p id="txtD2">
+contain:<br>
+1) 3 bowl of sambhar<br>
+2) 35 pieces of Idli<br>
+3) 5 pieces lemons<br>
+</p>
+ 
+</div>
+ 
+</div>
+ 
+</div>
+ 
+ 
+    </div>
+<script type="text/javascript">
+alert("AUTHOR : VAISHNAVI CHAUDHARY")
+ 
+array=[
+ 
+"URL(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.cnjiiPPJ5uo4h_8in-cDyAHaH_%26pid%3DApi&f=1)",
+"URL(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.srE4ux0pCteNVy857egKIwHaE7%26pid%3DApi&f=1)",
+"URL(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.mBjY2ET-uUILw_udEeDUtgHaFj%26pid%3DApi&f=1)",
+"URL(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.aL8FhlTSUXOq-w3h57t8AQHaEo%26pid%3DApi&f=1)",
+"URL(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.muxToCvgWbEPnH8RRiUjagHaEo%26pid%3DApi&f=1)",
+"URL(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.j8CuYJvk8OA9jcj_MijZLAHaFb%26pid%3DApi&f=1)",
+"URL(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.j8CuYJvk8OA9jcj_MijZLAHaFb%26pid%3DApi&f=1)",
+"URL(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.j8CuYJvk8OA9jcj_MijZLAHaFb%26pid%3DApi&f=1)"
+ 
+ 
+]
+ 
+var chn=-1;
+function change(){
+chn=chn+1;
+if(chn>=array.length){
+chn=0
+ 
+}
+document.getElementById("offer_wind").style.backgroundImage=array[chn]
+ 
+}
+ 
+setInterval(change,2000)
+ 
+function offer(){
+array=[];
+offer_wind.style.transform="rotateY(180deg)";
+offer_wind.style.height="700px";
+offer_wind.style.borderRadius="0%";
+offer_wind.style.backgroundImage="URL()";
+btn1.style.transform="rotateY(180deg)";
+btn1.style.opacity="0";
+purchase.style.zIndex="1"
+purchase.style.opacity="1";
+purchase.style.background="#EDF4FD";
+pro1.style.transform="rotateY(-180deg)";
+pro2.style.transform="rotateY(-180deg)";
+pro3.style.transform="rotateY(-180deg)";
+pro4.style.transform="rotateY(-180deg)";
+pro5.style.transform="rotateY(-180deg)";
+pro6.style.transform="rotateY(-180deg)";
+offer_wind.style.border="1px solid transparent";
+ 
+}
+ 
+sidebar.addEventListener("click" ,sidebar_anim)
+var click=0;
+function sidebar_anim(){
+click=click+1
+if(click%2!=0){
+svg1.style.transform="translate(10px,0px) rotate(50deg)";
+svg2.style.transform="translate(0px,-54px) rotate(-50deg)";
+bar.style.height="450px";
+ 
+}
+ 
+if(click%2==0){
+svg1.style.transform="translate(5px,-15px) rotate(90deg)";
+svg2.style.transform="translate(5px,-45px) rotate(90deg)";
+bar.style.height="0px";
+ 
+}
+ 
+}
+ 
+function item_in(){
+regionName.innerHTML="Indian food";
+item.style.opacity="1";
+item.style.height="710px";
+dish1.style.backgroundImage="url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.CKe3dL3NuRKG6CPcxSRRCQHaEK%26pid%3DApi&f=1)";
+txtA.innerHTML="Varan batti/वरण बट्टी/दाल बाटी";
+txtA1.innerHTML="On 50% discounted rate🔥 ";
+txtA2.innerHTML="contain:<br> 1) 3 plate varan/दाल + 3 teaspoon ghee <br>2) 10 pieces of baati <br>3) One plate Rice <br>4)brinjal gravy ";
+btn2.innerHTML="Buy now 100INR";
+ 
+ 
+ 
+ 
+ 
+dish2.style.backgroundImage="url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.A4yJnIOiC3hnvElhDig7BgHaLO%26pid%3DApi&f=1)";
+txtB.innerHTML="Khichadi";
+txtB1.innerHTML="On 50% discounted rate ";
+txtB2.innerHTML="contain <br> One plate extra cooked khichadi ";
+btn3.innerHTML="Buy now 75INR";
+ 
+ 
+ 
+ 
+dish3.style.backgroundImage="url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.4lasZl-fC99l979_WEWeWAHaLK%26pid%3DApi&f=1)";
+txtC.innerHTML="Idli sambhar";
+txtC1.innerHTML="On 50% discounted rate ";
+txtC2.innerHTML="contain:<br> 1) 3 bowl sambhar + 35 Idli <br>2) 10 pieces of baati <br>3) 5 lemons <br> ";
+btn4.innerHTML="Buy now 150INR";
+ 
+dish4.style.backgroundImage="url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.xHyeYg9ix5jpsQveAV19tAHaKe%26pid%3DApi&f=1)";
+txtD.innerHTML="cheese curry";
+txtD1.innerHTML="On 50% discounted rate ";
+txtD2.innerHTML="contain:<br> 2 plate Cheese curry ";
+btn5.innerHTML="Buy now 200INR";
+ 
+ 
+}
+svg3.addEventListener("click",back);
+function back(){
+item.style.height="0px";
+ 
+}
+ 
+function item_con(){
+regionName.innerHTML="Continental Food";
+item.style.opacity="1";
+item.style.height="710px";
+dish1.style.backgroundImage="URL(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.GFxZ3XrJwRSAzt1H3ky38AHaE8%26pid%3DApi&f=1)";
+txtA.innerHTML="Crispy Calmari rings";
+txtA1.innerHTML="50% discount on first purchase ";
+txtA2.innerHTML="contain:<br> One plate Crispy calmari rings with sauce";
+btn2.innerHTML="Buy now 500INR";
+ 
+dish2.style.backgroundImage="URL(https://stylesatlife.com/wp-content/uploads/2015/05/Jacket-potatoes-with-stuffing.jpg.webp)";
+txtB.innerHTML="Jacket potatoes with stuffing";
+txtB1.innerHTML="50% discounted first purchase 🔥";
+txtB2.innerHTML="contain:<br> One plate jacket potatoes";
+btn3.innerHTML="Buy now 500INR";
+ 
+ 
+dish3.style.backgroundImage="URL(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.pNkPj4XIwmeNwxss5MHqDAHaFj%26pid%3DApi&f=1)"
+txtC.innerHTML="Chicken and spinach pasta";
+txtC1.innerHTML="50% discounted first purchase 🔥";
+txtC2.innerHTML="contain:<br> One plate Chicken spinach pasta with extra cheese topping";
+btn4.innerHTML="Buy now 650INR";
+ 
+ 
+ 
+dish4.style.backgroundImage="URL(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt0xFDiFSuCU6OZMAgU8moE5nDOMYKa9Evgg&usqp=CAU)"
+txtD.innerHTML="Creamy tusan Garlic chicken";
+txtD1.innerHTML="50% discounted first purchase 🔥";
+txtD2.innerHTML="contain:<br> One plate Creamy tusan Garlic chicken";
+btn5.innerHTML="Buy now 750INR";
+ 
+ 
+}
+ 
+function item_chi(){
+regionName.innerHTML="chinese Food";
+item.style.opacity="1";
+item.style.height="710px";
+dish1.style.backgroundImage="URL(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSezbJAHN6QHeVi-3HD-mt5lbYeS-iQoXq6zg&usqp=CAU)";
+txtA.innerHTML="Soyabean chilli";
+txtA1.innerHTML="50% discount on first purchase ";
+txtA2.innerHTML="contain:<br> One plate Soyabean chilli with sauce ";
+btn2.innerHTML="Buy now 30INR";
+ 
+dish2.style.backgroundImage="url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRao8Ndlr21X-DpgLmLbalKzZxoiZYeXtx3Hw&usqp=CAU)";
+txtB.innerHTML="Delhi's special MoMo ";
+txtB1.innerHTML="50% discounted first purchase 🔥";
+txtB2.innerHTML="contain:<br> One plate of Delhi's tasty special MoMo with extra mayonnaise";
+btn3.innerHTML="Buy now 50INR";
+ 
+ 
+dish3.style.backgroundImage="URL(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlOCXqmDo5gVpah2h9cGmcwnYGx5BjXj5SGA&usqp=CAU)"
+txtC.innerHTML="Chau mein";
+txtC1.innerHTML="50% discounted first purchase 🔥";
+txtC2.innerHTML="contain:<br> One plate red chilli Chaw mein";
+btn4.innerHTML="Buy now 30INR";
+ 
+ 
+ 
+dish4.style.backgroundImage="URL(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3_sQ8Yaq-TVfIylR0QIIe5orFdHCXvgBr5g&usqp=CAU)"
+txtD.innerHTML="Manchurian";
+txtD1.innerHTML="50% discounted first purchase 🔥";
+txtD2.innerHTML="contain:<br> One plate Manchurian ";
+btn5.innerHTML="Buy now 40INR";
+ 
+ 
+}
+ 
+ 
+</script>
+    </body>
+</html>  
